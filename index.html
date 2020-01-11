@@ -3,6 +3,8 @@
 <head>
     <title>Jon Kimmel</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Hi Im Jon. I am a full stack developer in the Phoenix, Arizona area who works with
+     React.js, Javascript, HTML, CSS, Node, Express, and Android.">
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
     <link rel="stylesheet" href="style.css">
@@ -13,68 +15,83 @@
 
 <body>
 
-
-    <nav role="navigation" class="navBarObjects">
-        <h3><a href="#" class="nameNav">Jon Kimmel</a>
-            <span class="hamIcon">&#9776;</span>
-        </h3>
-        <ol class="menuItems">
-            <li><a href="#" class="aboutNav">About</a></li>
-            <li><a href="#" class="contactNav">Contact</a></li>
-            <li><a href="#" class="projectsNav">Projects</a></li>
-        </ol>
-    </nav>
-
-
-    <main role="contentinfo" class="contentSection">
+    <main>
+            <nav role="navigation" class="navBarObjects">
+                <h3><a href="#" id="nameNav">Jon Kimmel</a></h3>
+                <h3 id="hamIcon"><a href="#">&#9776;</a></h3>
+                <ol class="menuItems">
+                    <li><a href="#About" id="aboutNav">About</a></li>
+                    <li><a href="#Contact" id="contactNav">Contact</a></li>
+                    <li><a href="#Projects" id="projectsNav">Projects</a></li>
+                </ol>
+            </nav>
 
 
-            <section class="introBox">
-                <h1 id="teleType"></h1>
-            </section>
+                    <section class="introBox">
+                        <h1 id="teleType"></h1>
+                    </section>
 
 
-            <section class="aboutMeBox">
-                <p id="aboutMeSum">
-                    I am a full stack developer, a veteran of the Marine Corps, and graduate of Arizona State University.
-                    I am a individual who has a deep passion for full stack development, mobile development, and
-                    cloud computing. I believe the best environments are ones that team work, new discoveries, and
-                    humor are celebrated.
-                </p>
-            </section>
+                    <section class="aboutMeBox">
+                        <p id="aboutMeSum">
+                            I am a full stack developer, a veteran of the Marine Corps, and graduate of Arizona State University.
+                            I am a individual who has a deep passion for full stack development, mobile development, and
+                            cloud computing. I believe the best environments are ones that team work, new discoveries, and
+                            humor are celebrated. I work with React.js, Javascript, HTML5, CSS, jQuery, Node, Express, Java, and Android.
+                            In my free time you will find me outdoors working in my wood-shop, working with metal, camping or Hiking.
+                        </p>
+                    </section>
 
 
-            <section class="contactBox">
-                <p>Attention: Jon Kimmel<br> 16421. N. Tatum Blvd Suite 120<br>
-                        Phoenix, AZ 85308
-                </p>
-                <form action="action_page.php">
-                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                    <input type="text" id="subject" placeholder="Subject..">
-                    <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
-                    <input class="emailSubmit" type="submit" value="Submit">
-                </form>
-            </section>
+                    <section class="contactBox">
+                        <p id="emailPar">If you see something you like and have questions reach out to me
+                            <a id ="emailLink" href="mailto:JonKimmel16@gmail.com?subject=%20I%20want%20to%20work%20with%20you!"
+                               rel="EMAIL">here.</a> Also feel free to check out my LinkedIn and github
+                            repository below!
+                        </p>
+
+                        <p id="mailing">Attention: Jon Kimmel<br> 16421. N. Tatum Blvd Suite 120<br>
+                                Phoenix, AZ 85308
+                        </p>
 
 
-            <section class="projectBox">
-                    <iframe id="projectOne" title="Quiz-App" src="https://jon-k-1232.github.io/quiz-app/"></iframe>
-                    <p id="projectOnePar">This is an app was created to quiz your knowledge of American history while
-                        incorporating some humor. The quiz has little known pieces of history which makes it all the more
-                        fun. <br> HTML5, CSS3, Javascript, jQuery.
-                    </p>
-            </section>
+                    </section>
+
+
+                    <section class="projectBox">
+
+                        <embed id="projectOneFrame" title="Quiz-App" src="https://jon-k-1232.github.io/quiz-app/"></embed>
+                            <p id="projectOnePar">This is an app was created to quiz your knowledge of American history while
+                                incorporating some humor. The quiz has little known pieces of history which makes it all the more
+                                fun.
+                            </p>
+
+                        <h2>Technology used:</h2>
+                        <p id="projectOneTech">HTML5, CSS3, Javascript, jQuery.</p>
+
+
+
+                        <embed id="projectTwoFrame" title="Camping App" src="https://jon-k-1232.github.io/Camping-and-Hiking-Trails/."></embed>
+                            <p id="projectTwoPar">This is an app was created to find hiking trails and camping spots. This app can
+                                used world wide as the API's it pulls from are from google and REI.
+                            </p>
+
+                        <h2>Technology used:</h2>
+                        <p id="projectTwoTech">HTML5, CSS3, Javascript, jQuery, Google maps API, Google Geocoding API, REI Hiking Project
+                            API's</p>
+
+
+                        </section>
+
+            <footer>
+                    <ol class="footerOl">
+                        <li><a href="https://www.linkedin.com/in/jonathonkimmel/" class="fa fa-linkedin"></a></li></li>
+                        <li><a href="https://github.com/jon-k-1232" class="fa fa-github"></a></li>
+                        <li><a href="https://stackoverflow.com/users/11134119/jon" class="fa fa-stack-overflow"></a></li> </li>
+                    </ol>
+            </footer>
+
     </main>
-
-    <footer class="footerNav">
-            <ol class="footerOl">
-                <li><a href="https://www.linkedin.com/in/jon-kimmel-1a4760161?trk=people-guest_profile-result-card_
-                result-card_full-click" class="fa fa-linkedin"></a></li></li>
-                <li><a href="https://github.com/jon-k-1232" class="fa fa-github"></a></li>
-                <li><a href="https://stackoverflow.com/users/11134119/jon" class="fa fa-stack-overflow"></a></li> </li>
-            </ol>
-    </footer>
 
     <script src="index.js"></script>
 

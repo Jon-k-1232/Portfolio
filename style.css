@@ -1,386 +1,143 @@
 
+    body {
+        margin: 0px;
+        font-family: 'Russo One', sans-serif;
+        background-color: #21211b;
+    }
 
-body{
-    margin: 0px;
-    height: 105%;
-    background-image: url("images/thumbnail-1.png");
-    background-size: cover;
-}
+
+    main {
+        background-image: url("images/thumbnail-1.png");
+        background-size: contain;
+        min-height:100vh;
+    }
 
 
 /*--------------------------------  HEADER NAV MOBILE -------------------------------- */
 
 
-.menuItems {
-    display: none;
-    background-color: white;
-}
-
-.navBarObjects{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    width: 100%;
-    justify-content: space-between;
-    background: #333;
-    letter-spacing: 2px;
-}
-
-
-.menuItems.toggleCls {
-    display: flex;
-    flex-direction: column;
-    list-style-type: none;
-    padding-right: 0px;
-    padding-left: 0px;
-    width: 100%;
-    margin: auto;
-    top: 3.5em;
-    height: 100%;
-    font-size: 18px;
-    position: absolute;
-    z-index: 2;
-}
-
-
-
-li a{
-    text-decoration: none;
-    font-size: 21px;
-    color:#797979;
-    font-family: 'Russo One', sans-serif;
-}
-
-
-li {
-    margin-top: 2em;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    height: 20%;
-}
-
-
-.hamIcon {
-    position: absolute;
-    right: 20px;
-    top: 18px;
-    font-size: 24px;
-    color: #c0bec0;
-}
-
-
-a:link {
-    text-decoration: none;
-}
-
-
-
-
-.nameNav {
-    padding-left: 20px;
-    justify-content: flex-start;
-    color: #c0bec0;
-    font-family: 'Russo One', sans-serif;
-}
-
-
-/*-------------------------  FOOTER NAV MOBILE ------------------------- */
-
-
-.fa:hover {
-    opacity: 0.7;
-}
-
-
-.fa-github {
-    background: #55ACEE;
-    color: white;
-    padding: 12px;
-}
-
-.fa-github:before {
-    content: "\f09b";
-    font-size: 15px;
-}
-
-
-.fa-linkedin {
-    background: #55ACEE;
-    color: white;
-    padding: 12px;
-}
-
-.fa-linkedin:before {
-    content: "\f09b";
-    font-size: 15px;
-}
-
-
-.fa-stack-overflow {
-    background: #55ACEE;
-    color: white;
-    padding: 12px;
-}
-
-
-.fa-stack-overflow:before {
-    content: "\f09b";
-    font-size: 15px;
-}
-
-
-.footerOl{
-    list-style-type: none;
-    flex-direction: row;
-    display: flex;
-    margin: auto;
-}
-
-
-
-
-.footerNav {
-    display: flex;
-    position: absolute;
-    bottom: -15em;
-    width: 90%;
-    margin: auto;
-    flex-direction: row;
-    justify-content: center;
-}
-
-
-
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-}
-
-
-
-/*-------------------------  CONTENT CONTAINER MOBILE ------------------------- */
-
-
-
-.contentSection{
-    height: 150%;
-    width: 100%;
-}
-
-/*-------------------------  INTRO MOBILE ------------------------- */
-
-
-.introBox{
-    position: absolute;
-    width: 100%;
-    height: 70%;
-    display: flex;
-    z-index: 1;
-}
-
-
-h1 {
-    font-size: 2em;
-    width: 100%;
-    text-align: center;
-    color: #c5ae6b;
-    font-family: 'Russo One', sans-serif;
-    letter-spacing: 2px;
-    margin: auto;
-}
-
-
-/*-------------------------  ABOUT MOBILE ------------------------- */
-
-
-.aboutMeBox{
-    position: absolute;
-    display: flex;
-    height: 70%;
-    width: 100%;
-    z-index: 1;
-}
-
-
-.aboutMeBox p{
-    display: flex;
-    width: 100%;
-    text-align: center;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 1em;
-    margin-right: 1em;
-    font-size: 20px;
-    color: #c5ae6b;
-    font-family: 'Russo One', sans-serif;
-    letter-spacing: 1px;
-}
-
-
-/*-------------------------  CONTACT MOBILE ------------------------- */
-
-
-.contactBox {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    height: 77%;
-    margin-right: 3em;
-    margin-left: 3em;
-    z-index: 1;
-}
-
-
-.contactBox p {
-    font-size: 21px;
-    color: #c5ae6b;
-    text-align: center;
-    width:100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: auto;
-    margin-top: 1em;
-    font-family: 'Russo One', sans-serif;
-    letter-spacing: 1px;
-}
-
-
-.contactBox form {
-    align-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: auto;
-    margin-top: 1em;
-    width: 100%;
-}
-
-
-/*-- EMAIL BOX --*/
-
-
-.emailSubmit{
-    width: 10em;
-    height: 3em;
-    font-size: 14px;
-    width: 100%;
-    margin: auto;
-}
-
-
-input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    resize: vertical;
-}
-
-
-input[type=submit] {
-    background-color: #907d45;
-    color: white;
-    margin-top: 1em;
-    margin-bottom: 2em;
-    font-size: 15px;
-    border: 0px;
-    text-transform: uppercase;
-    padding: .25em .5em;
-    font-weight: 800;
-    border-radius: 4px;
-}
-
-
-input[type=submit]:hover {
-    background-color: #bfad78;
-}
-
-
-.container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-}
-
-
-.emailSubmit{
-    width: 10em;
-    height: 3em;
-    font-size: 14px;
-    width: 100%;
-    margin: auto;
-}
-
-
-
-
-
-/*-------------------------  PROJECT MOBILE ------------------------- */
-
-
-.projectBox {
-    display: flex;
-    margin: auto;
-    height: auto;
-    width: 99%;
-    flex-direction: column;
-    z-index: 1;
-}
-
-
-iframe {
-    height: 18em;
-    width: 100%;
-    display: flex;
-    border: none;
-}
-
-
-#projectOnePar {
-    color: #c5ae6b;
-    width: 99%;
-    font-size: 20px;
-    text-align: center;
-    font-family: 'Russo One', sans-serif;
-    letter-spacing: 1px;
-    margin-right: auto;
-    margin-left: auto;
-    position: absolute;
-    top: 17em;
-    display: flex;
-    flex-direction: column;
-}
-
-
-
-
-
-/************************\\\\\\\\\\\\\\ TABLET //////////////**********************/
-
-
-
-
-
-/* --------- TABLET ---------- */
-
-
-@media only screen and (min-width: 700px) {
-
-    body {
-        margin: 0px;
-        height: 100%;
-        background-image: url("images/thumbnail-1.png");
-        background-size: cover;
+    .menuItems {
+        display: none;
+        background-color: white;
+    }
+
+    .navBarObjects{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+        background: #333;
+        letter-spacing: 2px;
     }
 
 
-    /*-------------------------  FOOTER NAV TABLET ------------------------- */
+    .menuItems.toggleCls {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        padding: 0px 0px 0px 0px;
+        margin: auto;
+        width: 100%;
+        height: 133vh;
+        font-size: 18px;
+        position: absolute;
+        top: 3.2em;
+        z-index: 2;
+    }
+
+
+    li a{
+        text-decoration: none;
+        font-size: 21px;
+        color:#797979;
+    }
+
+
+    li {
+        margin: 0;
+        padding-top: 3em;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        height: 9%;
+    }
+
+
+    a:link {
+        text-decoration: none;
+    }
+
+
+    #nameNav {
+        padding-left: 20px;
+        justify-content: flex-start;
+        color: #c0bec0;
+    }
+
+
+    #hamIcon{
+        padding-right: 20px;
+    }
+
+
+    a{
+        color: #c0bec0;
+    }
+
+
+    /*-------------------------  FOOTER NAV MOBILE ------------------------- */
+
+
+    .fa:hover {
+        opacity: 0.7;
+    }
+
+
+    .fa-github {
+        background: #55ACEE;
+        color: white;
+        padding: 12px;
+    }
+
+    .fa-github:before {
+        content: "\f09b";
+        font-size: 15px;
+    }
+
+
+    .fa-linkedin {
+        background: #55ACEE;
+        color: white;
+        padding: 12px;
+    }
+
+    .fa-linkedin:before {
+        content: "\f09b";
+        font-size: 15px;
+    }
+
+
+    .fa-stack-overflow {
+        background: #55ACEE;
+        color: white;
+        padding: 12px;
+    }
+
+
+    .fa-stack-overflow:before {
+        content: "\f09b";
+        font-size: 15px;
+    }
+
+
+    .footerOl{
+        list-style-type: none;
+        flex-direction: row;
+        display: flex;
+        margin: auto;
+        padding: 0;
+    }
+
 
     .fa {
         padding: 20px;
@@ -390,165 +147,163 @@ iframe {
         text-decoration: none;
     }
 
-    .footerOl{
-        list-style-type: none;
-        flex-direction: row;
-        display: flex;
-    }
 
-
-    .footerNav{
-        width: 97%;
+    footer{
         display: flex;
-        flex-direction: row;
         justify-content: center;
-        bottom: 0;
     }
 
 
-    /*-------------------------  CONTENT CONTAINER TABLET ------------------------- */
-    .contentSection {
-        height: 100%;
-    }
+    /*-------------------------  INTRO MOBILE ------------------------- */
 
 
-    /*-------------------------  INTRO TABLET ------------------------- */
-
-
-    .introBox{
-        position: absolute;
-        width: 100%;
-        height: 70%;
-        display: flex;
-        z-index: 1;
-    }
-
-
-    h1 {
-        font-size: 2em;
-        width: 100%;
-        text-align: center;
-        color: #c5ae6b;
-        font-family: 'Russo One', sans-serif;
-        letter-spacing: 2px;
-        margin: auto;
-    }
-
-
-    /*-------------------------  ABOUT TABLET ------------------------- */
-
-
-
-    .aboutMeBox{
-        font-size: 30px;
+    .introBox {
+        height: 79vh;
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100%;
-        width: 90%;
-        margin-right: 1em;
-        margin-left: 2em;
-        color: #c5ae6b;
-        font-family: 'Russo One', sans-serif;
-        letter-spacing: 1px;
     }
 
-    .aboutMeBox p{
+    h1{
+        color: #c5ae6b;
+        letter-spacing: 2px;
+        font-size: 2em;
+        text-align: center;
+        margin: 0em 1em 0em 1em;
+    }
+
+    /*-------------------------  ABOUT ME MOBILE ------------------------- */
+
+
+    .aboutMeBox{
+        height: 100vh;
         display: flex;
         justify-content: center;
-        text-align: center;
-        margin-top: auto;
-        margin-left: 1.3em;
-        margin-right: 1.3em;
-        padding-right: 0em;
+        align-items: center;
     }
 
 
-    /*-------------------------  CONTACT TABLET ------------------------- */
+    #aboutMeSum{
+        margin: 0em 2em 0em 2em;
+        font-size: 20px;
+        color: #c5ae6b;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+
+    /*-------------------------  CONTACT MOBILE ------------------------- */
+
 
     .contactBox {
-        position: absolute;
+        height: 79vh;
         display: flex;
         flex-direction: column;
-        width: 89%;
-        height: 100%;
-        margin-left: 3em;
-        margin-right: 3em;
-        z-index: 1;
+        justify-content: center;
+        align-items: center;
     }
 
-    .contactBox p {
-        font-size: 21px;
+
+    #mailing{
+        font-size: 20px;
         color: #c5ae6b;
-        text-align: center;
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: auto;
-        margin-top: 8em;
-        font-family: 'Russo One', sans-serif;
         letter-spacing: 1px;
+        text-align: center;
+        width: 80%;
     }
 
 
-    /*-------------------------  PROJECT TABLET ------------------------- */
+    #emailPar {
+        color: #c5ae6b;
+        letter-spacing: 1px;
+        text-align: center;
+        width: 79%;
+        font-size: 20px;
+    }
+
+
+    #emailLink{
+        color: #989898;
+        text-decoration: underline;
+    }
+
+
+    /*-------------------------  PROJECT MOBILE ------------------------- */
 
 
     .projectBox {
+        min-height: 100vh;
         display: flex;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 4em;
-        height: 100%;
-        width: 99%;
         flex-direction: column;
-        z-index: 1;
+        align-items: center;
     }
 
 
-    iframe {
-        height: 18em;
-        width: 80%;
-        margin: auto;
+    #projectOneFrame, #projectTwoFrame {
+        height: 13em;
+        width: 85%;
         display: flex;
+        border: none;
+        margin: 2em 0em 0em 0em;
     }
 
 
-    #projectOnePar {
-        color: #c5ae6b;
-        width: 100%;
+    #projectOnePar, #projectTwoPar, #projectOneTech, #projectTwoTech{
+        margin: 1em 2em 0em 2em;
         font-size: 20px;
-        text-align: center;
-        font-family: 'Russo One', sans-serif;
         letter-spacing: 1px;
-        margin-right: auto;
-        margin-left: auto;
-        position: absolute;
-        top: 23em;
+        color: #c5ae6b;
+        text-align: center;
     }
 
-}
+
+    h2{
+        color: #c5ae6b;
+        text-decoration: underline;
+    }
 
 
 
 
 
-/************************\\\\\\\\\\\\\\ LARGE SCREEN //////////////**********************/
-
-
-/* --------- LARGE SCREEN ---------- */
-
-
-@media only screen and (min-width: 1000px){
+    /************************\\\\\\\\\\\\\\ TABLET  //////////////**********************/
 
 
 
-        /*--------------------------------  HEADER NAV LARGE SCREEN -------------------------------- */
-        ol a:hover {
-            color: red;
+
+    @media only screen and (min-width: 600px){
+
+
+        /*--------------------------------  BOXES -------------------------------- */
+        .introBox, .aboutMeBox, .contactBox{
+            height: 85vh
         }
 
-        .hamIcon {
+
+        /*--------------------------------  PROJECT -------------------------------- */
+
+        #projectOneFrame, #projectTwoFrame {
+            height: 20em;
+            width: 85%;
+            display: flex;
+            border: none;
+            margin: 2em 0em 0em 0em;
+        }
+
+    }
+
+
+    /************************\\\\\\\\\\\\\\ LARGE  //////////////**********************/
+
+
+
+
+    @media only screen and (min-width: 900px){
+
+
+        /*--------------------------------  HEADER NAV LARGE -------------------------------- */
+
+        #hamIcon {
             display: none;
         }
 
@@ -557,13 +312,11 @@ iframe {
             display: flex;
             flex-direction: row;
             align-items: flex-end;
-            font-size: 20px;
-            width: 100%;
             justify-content: space-between;
             background: #333;
-            position: sticky;
             letter-spacing: 2px;
             height: 3.1em;
+            font-size: 20px;
         }
 
 
@@ -596,92 +349,64 @@ iframe {
         }
 
 
-        /*-------------------------  CONTACT LARGE SCREEN ------------------------- */
-        .contactBox {
-            position: absolute;
+        /*--------------------------------  HEADER NAV LARGE -------------------------------- */
+
+
+        .projectBox {
+            min-height: 100vh;
             display: flex;
             flex-direction: column;
-            width: 91%;
-            height: 100%;
-            margin-left: 3em;
-            margin-right: 3em;
-            z-index: 1;
         }
 
 
-        .contactBox p {
-            font-size: 21px;
+        #projectOneFrame, #projectTwoFrame {
+            height: 30em;
+            width: 55%;
+            display: flex;
+            border: none;
+            margin: 2em 0em 0em 0em;
+        }
+
+
+        /*--------------------------------  ABOUT ME LARGE -------------------------------- */
+
+
+        #aboutMeSum {
+            margin: 0em 2em 0em 2em;
+            font-size: 20px;
+            color: #c5ae6b;
+            letter-spacing: 1px;
+            text-align: center;
+            width: 50%;
+        }
+
+
+        /*--------------------------------  CONTACT LARGE -------------------------------- */
+
+
+        #emailPar {
+            color: #c5ae6b;
+            letter-spacing: 1px;
+            text-align: center;
+            width: 56%;
+            font-size: 20px;
+        }
+
+
+        /*--------------------------------  PROJECTS LARGE -------------------------------- */
+
+
+        #projectOnePar, #projectTwoPar, #projectOneTech, #projectTwoTech {
+            margin: 1em 2em 0em 2em;
+            font-size: 20px;
+            letter-spacing: 1px;
             color: #c5ae6b;
             text-align: center;
-            width: 100%;
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: auto;
-            margin-top: 6em;
-            font-family: 'Russo One', sans-serif;
-            letter-spacing: 1px;
+            width: 50%;
         }
 
-
-        .contactBox form {
-            align-content: center;
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: auto;
-            margin-top: 0em;
-            width: 100%;
-        }
-
-        @media only screen and (max-height: 900px) {
-
-            .contactBox p {
-                font-size: 21px;
-                color: #c5ae6b;
-                text-align: center;
-                width: 100%;
-                margin-left: auto;
-                margin-right: auto;
-                margin-bottom: auto;
-                margin-top: 3em;
-                font-family: 'Russo One', sans-serif;
-                letter-spacing: 1px;
-            }
-
-        }
-
-
-        /*-------------------------  PROJECT LARGE SCREEN ------------------------- */
-
-
-    iframe {
-        height: 32em;
-        width: 80%;
-        display: flex;
-        margin: auto;
     }
 
-
-        iframe {
-            height: 27em;
-            width: 80%;
-            display: flex;
-            margin: auto;
-        }
-
-
-    #projectOnePar {
-        color: #c5ae6b;
-        width: 79%;
-        font-size: 20px;
-        text-align: center;
-        font-family: 'Russo One', sans-serif;
-        letter-spacing: 1px;
-        position: absolute;
-        margin-left: 7em;
-        top: 72%;
-    }
-
-}
 
 
 
