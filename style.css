@@ -1,412 +1,368 @@
+body {
+  margin: 0px;
+  font-family: "Russo One", sans-serif;
+  background-color: #21211b;
+}
 
-    body {
-        margin: 0px;
-        font-family: 'Russo One', sans-serif;
-        background-color: #21211b;
-    }
-
-
-    main {
-        background-image: url("images/thumbnail-1.png");
-        background-size: contain;
-        min-height:100vh;
-    }
-
+main {
+  background-image: url("images/thumbnail-1.png");
+  background-size: contain;
+  min-height: 100vh;
+}
 
 /*--------------------------------  HEADER NAV MOBILE -------------------------------- */
 
-
-    .menuItems {
-        display: none;
-        background-color: white;
-    }
-
-    .navBarObjects{
-        display: flex;
-        flex-direction: row;
-        align-items: flex-end;
-        justify-content: space-between;
-        background: #333;
-        letter-spacing: 2px;
-    }
-
-
-    .menuItems.toggleCls {
-        display: flex;
-        flex-direction: column;
-        list-style-type: none;
-        padding: 0px 0px 0px 0px;
-        margin: auto;
-        width: 100%;
-        height: 133vh;
-        font-size: 18px;
-        position: absolute;
-        top: 3.2em;
-        z-index: 2;
-    }
-
-
-    li a{
-        text-decoration: none;
-        font-size: 21px;
-        color:#797979;
-    }
-
-
-    li {
-        margin: 0;
-        padding-top: 3em;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        height: 9%;
-    }
-
-
-    a:link {
-        text-decoration: none;
-    }
-
-
-    #nameNav {
-        padding-left: 20px;
-        justify-content: flex-start;
-        color: #c0bec0;
-    }
-
-
-    #hamIcon{
-        padding-right: 20px;
-    }
-
-
-    a{
-        color: #c0bec0;
-    }
-
-
-    /*-------------------------  FOOTER NAV MOBILE ------------------------- */
-
-
-    .fa:hover {
-        opacity: 0.7;
-    }
-
-
-    .fa-github {
-        background: #55ACEE;
-        color: white;
-        padding: 12px;
-    }
-
-    .fa-github:before {
-        content: "\f09b";
-        font-size: 15px;
-    }
-
-
-    .fa-linkedin {
-        background: #55ACEE;
-        color: white;
-        padding: 12px;
-    }
-
-    .fa-linkedin:before {
-        content: "\f09b";
-        font-size: 15px;
-    }
-
-
-    .fa-stack-overflow {
-        background: #55ACEE;
-        color: white;
-        padding: 12px;
-    }
-
-
-    .fa-stack-overflow:before {
-        content: "\f09b";
-        font-size: 15px;
-    }
-
-
-    .footerOl{
-        list-style-type: none;
-        flex-direction: row;
-        display: flex;
-        margin: auto;
-        padding: 0;
-    }
-
-
-    .fa {
-        padding: 20px;
-        font-size: 30px;
-        width: 50px;
-        text-align: center;
-        text-decoration: none;
-    }
-
-
-    footer{
-        display: flex;
-        justify-content: center;
-    }
-
-
-    /*-------------------------  INTRO MOBILE ------------------------- */
-
-
-    .introBox {
-        height: 79vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    h1{
-        color: #c5ae6b;
-        letter-spacing: 2px;
-        font-size: 2em;
-        text-align: center;
-        margin: 0em 1em 0em 1em;
-    }
-
-    /*-------------------------  ABOUT ME MOBILE ------------------------- */
-
-
-    .aboutMeBox{
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-
-    #aboutMeSum{
-        margin: 0em 2em 0em 2em;
-        font-size: 20px;
-        color: #c5ae6b;
-        letter-spacing: 1px;
-        text-align: center;
-    }
-
-
-    /*-------------------------  CONTACT MOBILE ------------------------- */
-
-
-    .contactBox {
-        height: 79vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-
-    #mailing{
-        font-size: 20px;
-        color: #c5ae6b;
-        letter-spacing: 1px;
-        text-align: center;
-        width: 80%;
-    }
-
-
-    #emailPar {
-        color: #c5ae6b;
-        letter-spacing: 1px;
-        text-align: center;
-        width: 79%;
-        font-size: 20px;
-    }
-
-
-    #emailLink{
-        color: #989898;
-        text-decoration: underline;
-    }
-
-
-    /*-------------------------  PROJECT MOBILE ------------------------- */
-
-
-    .projectBox {
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-
-    #projectOneFrame, #projectTwoFrame {
-        height: 13em;
-        width: 85%;
-        display: flex;
-        border: none;
-        margin: 2em 0em 0em 0em;
-    }
-
-
-    #projectOnePar, #projectTwoPar, #projectOneTech, #projectTwoTech{
-        margin: 1em 2em 0em 2em;
-        font-size: 20px;
-        letter-spacing: 1px;
-        color: #c5ae6b;
-        text-align: center;
-    }
-
-
-    h2{
-        color: #c5ae6b;
-        text-decoration: underline;
-    }
-
-
-
-
-
-    /************************\\\\\\\\\\\\\\ TABLET  //////////////**********************/
-
-
-
-
-    @media only screen and (min-width: 600px){
-
-
-        /*--------------------------------  BOXES -------------------------------- */
-        .introBox, .aboutMeBox, .contactBox{
-            height: 85vh
-        }
-
-
-        /*--------------------------------  PROJECT -------------------------------- */
-
-        #projectOneFrame, #projectTwoFrame {
-            height: 20em;
-            width: 85%;
-            display: flex;
-            border: none;
-            margin: 2em 0em 0em 0em;
-        }
-
-    }
-
-
-    /************************\\\\\\\\\\\\\\ LARGE  //////////////**********************/
-
-
-
-
-    @media only screen and (min-width: 900px){
-
-
-        /*--------------------------------  HEADER NAV LARGE -------------------------------- */
-
-        #hamIcon {
-            display: none;
-        }
-
-
-        .navBarObjects {
-            display: flex;
-            flex-direction: row;
-            align-items: flex-end;
-            justify-content: space-between;
-            background: #333;
-            letter-spacing: 2px;
-            height: 3.1em;
-            font-size: 20px;
-        }
-
-
-        .menuItems li, .menuItems {
-            display: flex;
-            flex-direction: row;
-            padding-right: 1em;
-            text-align: right;
-            padding-right: .5em;
-            background-color: #333;
-
-        }
-
-
-        .nameNav {
-            top: 20px;
-            padding-left: 20px;
-            text-decoration: none;
-            justify-content: flex-start;
-            color: #c0bec0;
-            font-family: 'Russo One', sans-serif;
-        }
-
-
-        li a {
-            text-decoration: none;
-            font-size: 21px;
-            color: #c0bec0;
-            font-family: 'Russo One', sans-serif;
-        }
-
-
-        /*--------------------------------  HEADER NAV LARGE -------------------------------- */
-
-
-        .projectBox {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-
-
-        #projectOneFrame, #projectTwoFrame {
-            height: 30em;
-            width: 55%;
-            display: flex;
-            border: none;
-            margin: 2em 0em 0em 0em;
-        }
-
-
-        /*--------------------------------  ABOUT ME LARGE -------------------------------- */
-
-
-        #aboutMeSum {
-            margin: 0em 2em 0em 2em;
-            font-size: 20px;
-            color: #c5ae6b;
-            letter-spacing: 1px;
-            text-align: center;
-            width: 50%;
-        }
-
-
-        /*--------------------------------  CONTACT LARGE -------------------------------- */
-
-
-        #emailPar {
-            color: #c5ae6b;
-            letter-spacing: 1px;
-            text-align: center;
-            width: 56%;
-            font-size: 20px;
-        }
-
-
-        /*--------------------------------  PROJECTS LARGE -------------------------------- */
-
-
-        #projectOnePar, #projectTwoPar, #projectOneTech, #projectTwoTech {
-            margin: 1em 2em 0em 2em;
-            font-size: 20px;
-            letter-spacing: 1px;
-            color: #c5ae6b;
-            text-align: center;
-            width: 50%;
-        }
-
-    }
-
-
-
-
+.menuItems {
+  display: none;
+  background-color: white;
+}
+
+.navBarObjects {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  background: #333;
+  letter-spacing: 2px;
+}
+
+.menuItems.toggleCls {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0px 0px 0px 0px;
+  margin: auto;
+  width: 100%;
+  height: 133vh;
+  font-size: 18px;
+  position: absolute;
+  top: 3.2em;
+  z-index: 2;
+}
+
+li a {
+  text-decoration: none;
+  font-size: 21px;
+  color: #797979;
+}
+
+li {
+  margin: 0;
+  padding-top: 3em;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 9%;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+#nameNav {
+  padding-left: 20px;
+  justify-content: flex-start;
+  color: #c0bec0;
+}
+
+#hamIcon {
+  padding-right: 20px;
+}
+
+a {
+  color: #c0bec0;
+}
+
+/*-------------------------  FOOTER NAV MOBILE ------------------------- */
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-github {
+  background: #55acee;
+  color: white;
+  padding: 12px;
+}
+
+.fa-github:before {
+  content: "\f09b";
+  font-size: 15px;
+}
+
+.fa-linkedin {
+  background: #55acee;
+  color: white;
+  padding: 12px;
+}
+
+.fa-linkedin:before {
+  content: "\f09b";
+  font-size: 15px;
+}
+
+.fa-stack-overflow {
+  background: #55acee;
+  color: white;
+  padding: 12px;
+}
+
+.fa-stack-overflow:before {
+  content: "\f09b";
+  font-size: 15px;
+}
+
+.footerOl {
+  list-style-type: none;
+  flex-direction: row;
+  display: flex;
+  margin: auto;
+  padding: 0;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+/*-------------------------  INTRO MOBILE ------------------------- */
+
+.introBox {
+  height: 79vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: #c5ae6b;
+  letter-spacing: 2px;
+  font-size: 2em;
+  text-align: center;
+  margin: 0em 1em 0em 1em;
+}
+
+/*-------------------------  ABOUT ME MOBILE ------------------------- */
+
+.aboutMeBox {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#aboutMeSum {
+  margin: 0em 2em 0em 2em;
+  font-size: 20px;
+  color: #c5ae6b;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+/*-------------------------  CONTACT MOBILE ------------------------- */
+
+.contactBox {
+  height: 79vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#mailing {
+  font-size: 20px;
+  color: #c5ae6b;
+  letter-spacing: 1px;
+  text-align: center;
+  width: 80%;
+}
+
+#emailPar {
+  color: #c5ae6b;
+  letter-spacing: 1px;
+  text-align: center;
+  width: 79%;
+  font-size: 20px;
+}
+
+#emailLink {
+  color: #989898;
+  text-decoration: underline;
+}
+
+/*-------------------------  PROJECT MOBILE ------------------------- */
+
+.projectBox {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projectOneContainer,
+.projectTwoContainer,
+.projectThreeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5em;
+}
+
+#projectOneFrame,
+#projectTwoFrame,
+#projectThreeFrame {
+  height: 13em;
+  width: 85%;
+  display: flex;
+  border: none;
+  margin: 2em 0em 0em 0em;
+}
+
+#projectOnePar,
+#projectTwoPar,
+#projectThreePar,
+#projectOneTech,
+#projectTwoTech,
+#projectThreeTech {
+  margin: 1em 2em 0em 2em;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #c5ae6b;
+  text-align: center;
+}
+
+h2 {
+  color: #c5ae6b;
+  text-decoration: underline;
+}
+
+/************************\\\\\\\\\\\\\\ TABLET  //////////////**********************/
+
+@media only screen and (min-width: 600px) {
+  /*--------------------------------  BOXES -------------------------------- */
+  .introBox,
+  .aboutMeBox,
+  .contactBox {
+    height: 85vh;
+  }
+
+  /*--------------------------------  PROJECT -------------------------------- */
+
+  #projectOneFrame,
+  #projectTwoFrame,
+  #projectThreeFrame {
+    height: 20em;
+    width: 85%;
+    display: flex;
+    border: none;
+    margin: 2em 0em 0em 0em;
+  }
+}
+
+/************************\\\\\\\\\\\\\\ LARGE  //////////////**********************/
+
+@media only screen and (min-width: 900px) {
+  /*--------------------------------  HEADER NAV LARGE -------------------------------- */
+
+  #hamIcon {
+    display: none;
+  }
+
+  .navBarObjects {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    background: #333;
+    letter-spacing: 2px;
+    height: 3.1em;
+    font-size: 20px;
+  }
+
+  .menuItems li,
+  .menuItems {
+    display: flex;
+    flex-direction: row;
+    padding-right: 1em;
+    text-align: right;
+    padding-right: 0.5em;
+    background-color: #333;
+  }
+
+  .nameNav {
+    top: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+    justify-content: flex-start;
+    color: #c0bec0;
+    font-family: "Russo One", sans-serif;
+  }
+
+  li a {
+    text-decoration: none;
+    font-size: 21px;
+    color: #c0bec0;
+    font-family: "Russo One", sans-serif;
+  }
+
+  /*--------------------------------  ABOUT ME LARGE -------------------------------- */
+
+  #aboutMeSum {
+    margin: 0em 2em 0em 2em;
+    font-size: 20px;
+    color: #c5ae6b;
+    letter-spacing: 1px;
+    text-align: center;
+    width: 50%;
+  }
+
+  /*--------------------------------  CONTACT LARGE -------------------------------- */
+
+  #emailPar {
+    color: #c5ae6b;
+    letter-spacing: 1px;
+    text-align: center;
+    width: 56%;
+    font-size: 20px;
+  }
+
+  /*--------------------------------  PROJECTS LARGE -------------------------------- */
+
+  .projectBox {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #projectOneFrame,
+  #projectTwoFrame,
+  #projectThreeFrame {
+    height: 30em;
+    width: 55%;
+    display: flex;
+    border: none;
+    margin: 2em 0em 0em 0em;
+  }
+
+  #projectOnePar,
+  #projectTwoPar,
+  #projectThreePar,
+  #projectOneTech,
+  #projectTwoTech,
+  #projectThreeTech {
+    margin: 1em 2em 0em 2em;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #c5ae6b;
+    text-align: center;
+    width: 50%;
+  }
+}

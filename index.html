@@ -14,8 +14,9 @@
 </head>
 
 <body>
-
     <main>
+        <!----------  Header  ---------->
+
             <nav role="navigation" class="navBarObjects">
                 <h3><a href="#" id="nameNav">Jon Kimmel</a></h3>
                 <h3 id="hamIcon"><a href="#">&#9776;</a></h3>
@@ -26,11 +27,13 @@
                 </ol>
             </nav>
 
+        <!----------  Intro Section  ---------->
 
                     <section class="introBox">
                         <h1 id="teleType"></h1>
                     </section>
 
+        <!----------  About Me Section  ---------->
 
                     <section class="aboutMeBox">
                         <p id="aboutMeSum">
@@ -42,6 +45,7 @@
                         </p>
                     </section>
 
+        <!----------  Contact Section  ---------->
 
                     <section class="contactBox">
                         <p id="emailPar">If you see something you like and have questions reach out to me
@@ -53,35 +57,48 @@
                         <p id="mailing">Attention: Jon Kimmel<br> 16421. N. Tatum Blvd Suite 120<br>
                                 Phoenix, AZ 85032
                         </p>
-
-
                     </section>
 
+        <!----------  Projects Section  ---------->
 
                     <section class="projectBox">
+                        <div class="projectOneContainer">
+                            <iframe id="projectOneFrame" title="Quiz-App" src="https://jon-k-1232.github.io/quiz-app/"></iframe>
+                                <p id="projectOnePar">This is an app was created to quiz your knowledge of American history while
+                                    incorporating some humor. The quiz has little known pieces of history which makes it all the more
+                                    fun.
+                                </p>
 
-                        <embed id="projectOneFrame" title="Quiz-App" src="https://jon-k-1232.github.io/quiz-app/"></embed>
-                            <p id="projectOnePar">This is an app was created to quiz your knowledge of American history while
-                                incorporating some humor. The quiz has little known pieces of history which makes it all the more
-                                fun.
+                            <h2>Technology used:</h2>
+                            <p id="projectOneTech">HTML5, CSS3, Javascript, jQuery.</p>
+                        </div>
+
+                        <div class="projectTwoContainer">
+                            <iframe id="projectTwoFrame" title="Camping-App" src="https://jon-k-1232.github.io/Camping-and-Hiking-Trails/."></iframe>
+                                <p id="projectTwoPar">This is an app was created to find hiking trails and camping spots. This app can
+                                    used world wide as the API's it pulls from are from google and REI.
+                                </p>
+
+                            <h2>Technology used:</h2>
+                            <p id="projectTwoTech">HTML5, CSS3, Javascript, jQuery, Google maps API, Google Geocoding API, REI Hiking Project
+                                API's</p>
+                        </div>
+
+                        <div class="projectThreeContainer">
+                            <iframe id="projectThreeFrame" title="El-Burrito-Oso" src="https://el-burrito-oso.herokuapp.com/"></iframe>
+                            <p id="projectThreePar"> This app allows a user to to locate, read, and leave reviews for burritos.
+                                By inputting an address a user will be able to view restaurants in the area that
+                                sell burritos. A user will then see a rating for each hit on a scale of 1-10.
                             </p>
 
-                        <h2>Technology used:</h2>
-                        <p id="projectOneTech">HTML5, CSS3, Javascript, jQuery.</p>
-
-
-
-                        <embed id="projectTwoFrame" title="Camping App" src="https://jon-k-1232.github.io/Camping-and-Hiking-Trails/."></embed>
-                            <p id="projectTwoPar">This is an app was created to find hiking trails and camping spots. This app can
-                                used world wide as the API's it pulls from are from google and REI.
+                            <h2>Technology used:</h2>
+                            <p id="projectThreeTech">React.js, RESTful API, React-router, Context, CSS3, Node.js, Express,
+                                Knex.js, PostgreSQL, JEST, Mocha, Chai-http.
                             </p>
+                        </div>
+                    </section>
 
-                        <h2>Technology used:</h2>
-                        <p id="projectTwoTech">HTML5, CSS3, Javascript, jQuery, Google maps API, Google Geocoding API, REI Hiking Project
-                            API's</p>
-
-
-                        </section>
+        <!----------  Footer  ---------->
 
             <footer>
                     <ol class="footerOl">
@@ -90,7 +107,6 @@
                         <li><a href="https://stackoverflow.com/users/11134119/jon" class="fa fa-stack-overflow"></a></li> </li>
                     </ol>
             </footer>
-
     </main>
 
     <script src="index.js"></script>
