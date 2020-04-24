@@ -10,13 +10,13 @@ function typeWriter() {
       { delay: 300 },
       { type: "I'm Jon, " },
       { type: "<br>" },
-      { type: " and I'm a full stack developer." }
-    ]
+      { type: " and I'm a full stack developer." },
+    ],
   });
 }
 
 function home() {
-  $(".navBarObjects").on("click", "#nameNav", function() {
+  $(".navBarObjects").on("click", "#nameNav", function () {
     $(".introBox").show();
     $(".aboutMeBox").hide();
     $(".contactBox").hide();
@@ -26,7 +26,7 @@ function home() {
 }
 
 function aboutMeAppear() {
-  $(".navBarObjects").on("click", "#aboutNav", function() {
+  $(".navBarObjects").on("click", "#aboutNav", function () {
     $(".aboutMeBox").show();
     $(".introBox").hide();
     $(".contactBox").hide();
@@ -36,7 +36,7 @@ function aboutMeAppear() {
 }
 
 function contactMeAppear() {
-  $(".navBarObjects").on("click", "#contactNav", function() {
+  $(".navBarObjects").on("click", "#contactNav", function () {
     $(".contactBox").show();
     $(".introBox").hide();
     $(".projectBox").hide();
@@ -46,7 +46,7 @@ function contactMeAppear() {
 }
 
 function projectsAppear() {
-  $(".navBarObjects").on("click", "#projectsNav", function() {
+  $(".navBarObjects").on("click", "#projectsNav", function () {
     $(".projectBox").show();
     $(".introBox").hide();
     $(".contactBox").hide();
@@ -56,7 +56,7 @@ function projectsAppear() {
 }
 
 function toggleClass() {
-  $(".navBarObjects").on("click", "#hamIcon", function() {
+  $(".navBarObjects").on("click", "#hamIcon", function () {
     console.log("Hamburger toggle ran");
     $(".toggleCls").show();
     var menu = document.querySelector(".menuItems");
