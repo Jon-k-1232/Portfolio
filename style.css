@@ -14,7 +14,7 @@ main {
 
 .menuItems {
   display: none;
-  background-color: white;
+  background-color: #141e55f2;
 }
 
 .navBarObjects {
@@ -22,7 +22,7 @@ main {
   flex-direction: row;
   align-items: flex-end;
   justify-content: space-between;
-  background: #333;
+  background: #3330;
   letter-spacing: 2px;
   height: 7vh;
 }
@@ -34,17 +34,24 @@ main {
   padding: 0px 0px 0px 0px;
   margin: auto;
   width: 100%;
-  height: 342px;
+  height: 100%;
+  top: 0;
   font-size: 18px;
   position: absolute;
-  top: 54px;
+  border-radius: 3px;
   z-index: 2;
 }
 
 li a {
   text-decoration: none;
-  font-size: 21px;
-  color: #797979;
+  font-family: open sans;
+  font-size: 60px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+li a:hover{
+  color: #55acee;
 }
 
 li {
@@ -63,15 +70,28 @@ a:link {
 #nameNav {
   padding-left: 20px;
   justify-content: flex-start;
-  color: #c0bec0;
+  color: #ffffff;
+  font-family: 'Open Sans';
+  font-weight: 600;
+}
+
+#nameNav:hover{
+  color: #55acee;
+  cursor: pointer;
 }
 
 #hamIcon {
   padding-right: 20px;
+  z-index: 3;
+}
+
+#hamIcon a:hover{
+  color: #55acee;
+  cursor: pointer;
 }
 
 a {
-  color: #c0bec0;
+  color: #ffffff;
 }
 
 /*-------------------------  FOOTER NAV MOBILE ------------------------- */
@@ -122,7 +142,7 @@ a {
 }
 
 .fa {
-  padding: 20px;
+  padding: 15px;
   font-size: 30px;
   width: 50px;
   text-align: center;
@@ -145,9 +165,11 @@ footer {
 }
 
 h1 {
-  color: #c5ae6b;
+  font-family: 'Playfair Display', serif;
+  color: #ffffff;
+  font-weight: 400;
   letter-spacing: 2px;
-  font-size: 2em;
+  font-size: 50px;
   text-align: center;
   margin: 0em 1em 0em 1em;
 }
@@ -277,47 +299,6 @@ h2 {
 /************************\\\\\\\\\\\\\\ LARGE  //////////////**********************/
 
 @media only screen and (min-width: 900px) {
-  /*--------------------------------  HEADER NAV LARGE -------------------------------- */
-
-  #hamIcon {
-    display: none;
-  }
-
-  .navBarObjects {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    background: #333;
-    letter-spacing: 2px;
-    font-size: 20px;
-  }
-
-  .menuItems li,
-  .menuItems {
-    display: flex;
-    flex-direction: row;
-    padding: 0;
-    text-align: right;
-    padding-right: 0.5em;
-    background-color: #333;
-  }
-
-  .nameNav {
-    top: 20px;
-    padding-left: 20px;
-    text-decoration: none;
-    justify-content: flex-start;
-    color: #c0bec0;
-    font-family: "Russo One", sans-serif;
-  }
-
-  li a {
-    text-decoration: none;
-    font-size: 21px;
-    color: #c0bec0;
-    font-family: "Russo One", sans-serif;
-  }
 
   /*--------------------------------  ABOUT ME LARGE -------------------------------- */
 
