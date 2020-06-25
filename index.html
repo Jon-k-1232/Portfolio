@@ -1,25 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" href="images/icon.png" type="image">
     <title>Jon Kimmel</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Hi Im Jon. I am a full stack developer in the Phoenix, Arizona area who works with
      React.js, Javascript, HTML, CSS, Node, Express, and Android.">
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-XXXXX-Y', 'auto');
+        ga('send', 'pageview');
+    </script>
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Lalezar|Roboto+Mono|Montserrat|Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <script type="text/javascript" src="https://cdn.rawgit.com/mrvautin/typewrite/master/dist/typewrite.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
+
     <main>
         <!----------  Header  ---------->
 
             <nav role="navigation" class="navBarObjects">
                 <h3><a href="#" id="nameNav">Jon Kimmel</a></h3>
-                <h3 id="hamIcon"><a href="#">&#9776;</a></h3>
+                <p id="hamIcon"><a href="#">&#9776;</a></p>
                 <ol class="menuItems">
                     <li><a href="#About" id="aboutNav">About</a></li>
                     <li><a href="#Contact" id="contactNav">Contact</a></li>
@@ -38,8 +51,8 @@
                     <section class="aboutMeBox">
                         <p id="aboutMeSum">
                             I am a full stack developer, a veteran of the Marine Corps, and graduate of Arizona State University.
-                            I am a individual who has a deep passion for full stack development, mobile development, and
-                            cloud computing. I believe the best environments are ones that team work, new discoveries, and
+                            I am a individual who has a deep passion for full stack development, mobile development, and machine learning.
+                            I believe the best environments are ones that team work, new discoveries, and
                             humor are celebrated. I work with React.js, Javascript, HTML5, CSS, jQuery, Node, Express, Java, and Android.
                             In my free time you will find me outdoors working in my wood-shop, working with metal, camping or Hiking.
                         </p>
@@ -63,7 +76,7 @@
 
                     <section class="projectBox">
                         <div class="projectOneContainer">
-                            <h1>Merica Quiz</h1>
+                            <div class="pOneTitle"><hr id="pOneLine"><span></span><h1> Merica Quiz </h1><span></span><hr></div>
                             <iframe id="projectOneFrame" title="Quiz-App" src="https://jon-k-1232.github.io/quiz-app/"></iframe>
                                 <p id="projectOnePar">This is an app was created to quiz your knowledge of American history while
                                     incorporating some humor. The quiz has little known pieces of history which makes it all the more
@@ -82,7 +95,7 @@
                         </div>
 
                         <div class="projectTwoContainer">
-                            <h1>Camping and Hiking</h1>
+                            <div class="pTwoTitle"><hr><span></span><h1>Camping Spots</h1><span></span><hr></div>
                             <iframe id="projectTwoFrame" title="Camping-App" src="https://jon-k-1232.github.io/Camping-and-Hiking-Trails/."></iframe>
                                 <p id="projectTwoPar">This is an app was created to find hiking trails and camping spots. This app can
                                     used world wide as the API's it pulls from are from google and REI. I got the idea to create this
@@ -101,7 +114,7 @@
                         </div>
 
                         <div class="projectThreeContainer">
-                            <h1>El Burrito Oso</h1>
+                            <div class="pThreeTitle"><hr><span></span><h1>El Burrito Oso</h1><span></span><hr></div>
                             <iframe id="projectThreeFrame" title="El-Burrito-Oso" src="https://el-burrito-oso.herokuapp.com/"></iframe>
                             <p id="projectThreePar"> This app allows a user to locate, read, and leave reviews for burritos.
                                 By inputting an address a user will be able to view restaurants in the area that
@@ -123,7 +136,7 @@
                         </div>
 
                         <div class="projectFourContainer">
-                            <h1>TLX</h1>
+                            <div class="pFourTitle"><hr><span></span><h1>TLX</h1><span></span><hr></div>
                             <iframe id="projectFourFrame" title="TLX" src="https://tlxs.herokuapp.com/"></iframe>
                             <p id="projectFourPar"> This app was created to give tenants and property managers a
                                 single place to exchange. Specifically, tenants and property managers can converse
