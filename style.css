@@ -235,7 +235,7 @@ footer {
 .projectBox {
   min-height: 79vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: center;
   color: #ffffff;
 }
@@ -362,7 +362,7 @@ h2 {
   .projectBox {
     min-height: 79vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   #projectOneFrame,
